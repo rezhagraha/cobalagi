@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="navbar-top">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">+62 8213 774 547</li>
+                <li class="list-inline-item" style="float: right">onca@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a class="navbar-header" href="index.html"><img src="resources/icons/logo.png"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map-area.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="maps.html">Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button id="btnLogin" type="button" class="nav-login" onclick="toggleLogin(1)">Login</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="checkout">
+        <div class="container">
+            <div class="checkout-form">
+                <div class="checkout-title">
+                    <h1>Bayar</h1>
+                </div>
+                <form action="success.html" method="post">
+                    <div class="checkout-left" style="width: 95%">
+                        <h3>Nama</h3>
+                        <input type="text" class="form-control" style="width: 300px;" required>
+                        <h3>Kota</h3>
+                        <input type="text" class="form-control" style="width: 300px;" required>
+                        <h3>Alamat</h3>
+                        <textarea class="form-control" required></textarea>
+                        <h3>Metode Pembayaran</h3>
+                        <select required>
+  				<option value="bank">Bank</option>
+  				<option value="bitcoin">BitCoin</option>
+  				<option value="tunai">Tunai</option>
+  				<option value="pulsa">Pulsa</option>
+                </select><br>
+                    </div>
+                    <div class="checkout-bottom">
+                        <button id="checkout-pay" type="submit">Bayar</button>
+                        <a href="search-result.html"><button id="checkout-cancel" type="button">Batal</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

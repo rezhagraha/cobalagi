@@ -1,0 +1,223 @@
+
+<!DOCTYPEHTML>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="loginCheck()">
+    <div class="navbar-top">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">+62 8213 774 547</li>
+                <li class="list-inline-item" style="float: right">onca@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a class="navbar-header" href="index.html"><img src="resources/icons/logo.png"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map-area.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="maps.html">Maps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><button id="btnLogin" type="button" class="nav-login" onclick="toggleLogin(1)">Login</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="banner">
+        <div class="banner-desc">
+            <h2>DolanMas</h2>
+            <p style="font-size: 20px">Banyumas merupakan salah satu kabupaten di Jawa Tengah yang kaya tempat wisata. Sebenarnya selain baturaden masih banyak lagi tempat wisata yang harus diketahui dan dikunjungi oleh wisatawan asing maupun nasional.</p>
+        </div>
+    </div>
+    <div id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="welcome-img">&nbsp;</div>
+                </div>
+                <div class="col-lg-7">
+                    <h2>Selamat Datang di
+                        <div class="blue">Banyumas</div>
+                    </h2>
+                    <p>Banyumas adalah kabupaten di Provinsi Jawa Tengah. Ibukotanya adalah Purwokerto. Kabupaten ini berbatasan dengan Kabupaten Brebes di utara; Kabupaten Purbalingga, Kabupaten Banjarnegara, dan Kabupaten Kebumen di timur, serta Kabupaten Cilacap di sebelah selatan dan barat. Gunung Slamet, gunung tertinggi di Jawa Tengah terdapat di ujung utara wilayah kabupaten ini.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="district">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="district-card item-1">
+                        <div class="district-item">
+                            <div class="item-city">
+                                <h3>Purwokerto</h3>
+                            </div>
+                            <div class="item-name">
+                                Baturaden
+                            </div>
+                            <a href="map-area.html"><span class="features-span"></span></a>
+                        </div>
+                        <div class="district-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="district-card item-2">
+                        <div class="district-item">
+                            <div class="item-city">
+                                <h3>Cilongok</h3>
+                            </div>
+                            <div class="item-name">
+                                Curug Cipendok
+                            </div>
+                            <a href="map-area.html"><span class="features-span"></span></a>
+                        </div>
+                        <div class="district-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="district-card item-3">
+                        <div class="district-item">
+                            <div class="item-city">
+                                <h3>Baturaden</h3>
+                            </div>
+                            <div class="item-name">
+                                Small World
+                            </div>
+                            <a href="map-area.html"><span class="features-span"></span></a>
+                        </div>
+                        <div class="district-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="district-card item-4">
+                        <div class="district-item">
+                            <div class="item-city">
+                                <h3>Baturaden</h3>
+                            </div>
+                            <div class="item-name">
+                                Gardu Pandang Baturaden
+                            </div>
+                            <a href="map-area.html"><span class="features-span"></span></a>
+                        </div>
+                        <div class="district-box">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="offer">
+        <div class="container">
+            <h2>Ada apa saja di
+                <div class="blue">DolanMas</div>
+            </h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="offer-card">
+                        <img src="resources/icons/hotel.png" class="hotel"><br> Penginapan
+                        <a href="map-area.html"><span class="features-span"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offer-card">
+                        <img src="resources/icons/restaurant.png" class="hotel"><br> Restaurant
+                        <a href="map-area.html"><span class="features-span"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offer-card">
+                        <img src="resources/icons/planet-earth.png" class="hotel"><br> Wisata
+                        <a href="map-area.html"><span class="features-span"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offer-card">
+                        <img src="resources/icons/grocery.png" class="hotel"><br> Jajanan
+                        <a href="map-area.html"><span class="features-span"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="subscribe">
+        <div class="container">
+            <div class="subscribe-card">
+                <div id="subscribe-desc">
+                    <h2>Langganan</h2>
+                    <p>Daftar untuk mendapatkan diskon di trip selanjutnya, berhemat sampai 80% jangan sampai ketinggalan promosi dari dolanmas.com</p>
+                </div>
+                <div id="subscribe-box">
+                    <div class="input-group stylish-input-group">
+                        <input type="text" class="form-control subscribe-input" placeholder="Subscribe">
+                        <span class="input-group-addon">
+                        <button class="accept" type="button" onclick="subscribe()">
+                        Daftar
+                        </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="reason">
+        <div class="container">
+            <h2>Kenapa
+                <div class="blue">DolanMas</div>
+            </h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="reason-img"><img src="resources/icons/dollar-symbol.png" width="100%"></div>
+                    <div class="reason-desc">Gratis dan Up to Date</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="reason-img"><img src="resources/icons/happy.png" width="100%"></div>
+                    <div class="reason-desc">Berwisata Tanpa Pusing</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="reason-img"><img src="resources/icons/diamond.png" width="100%"></div>
+                    <div class="reason-desc">Temukan Hidden Gems!!!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="copyright">
+                Copyright Onca &copy;2017
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
